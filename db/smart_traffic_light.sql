@@ -39,9 +39,9 @@ CREATE TABLE `traffic_data` (
 --
 
 INSERT INTO `traffic_data` (`id`, `region`, `tl_condition`, `traffic`, `duration`) VALUES
-(1, 'Dago 01', 'Active', 25, 60),
-(2, 'Dago 02', 'Broken', 0, 0),
-(3, 'Dago 03', 'Active', 28, 70),
+(1, 'Dago 01', 'Deactivated', 0, 0),
+(2, 'Dago 02', 'Deactivated', 0, 0),
+(3, 'Dago 03', 'Deactivated', 0, 0),
 (4, 'Dago 04', 'Deactivated', 0, 0);
 
 --
