@@ -128,7 +128,7 @@ h1,h2,h3,h4,h5,h6 {
 
 <!-- Footer -->
 <footer class="w3-center w3-light-grey w3-padding-32">
-  <p>Smart Traffic Light © May 2017. Fully made with love by Alif, There and Fanni, with love.</p>
+  <p>Smart Traffic Light | May 2017. Fully made with love by Alif, There and Fanni, with love.</p>
 </footer>
 
 </body>
