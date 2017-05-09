@@ -1,5 +1,5 @@
 <?php
-              $con=mysqli_connect("localhost","root","","smart_traffic_light");
+              $con=mysqli_connect("mysql3.gear.host","websiteimka","iloveJESUS<3","smart_traffic_light");
               // Check connection
               if (mysqli_connect_errno())
               {
