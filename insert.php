@@ -5,6 +5,7 @@
 	$link = mysqli_connect("mysql3.gear.host", "websiteimka", "iloveJESUS<3", "websiteimka");
 	if($link === false){
 		die("ERROR: Could not connect. " . mysqli_connect_error());
+		echo "kontol";
 	}
 		
  if(getenv('REQUEST_METHOD') == 'POST') {
