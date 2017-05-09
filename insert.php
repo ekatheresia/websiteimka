@@ -16,6 +16,7 @@
 		print_r($input);
 				echo "kontol";
 		$duration = $input["duration"];
+	 		echo "kontol2";
 
 		$sql = "INSERT INTO traffic_data (region, tl_condition, traffic, duration) VALUES ('Dago 01',
 		'Active', '2', $duration)";
