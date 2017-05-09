@@ -1,5 +1,5 @@
 <?php
-              $con=mysqli_connect("mysql3.gear.host","websiteimka","iloveJESUS<3","smart_traffic_light");
+              $con=mysqli_connect("mysql3.gear.host","websiteimka","iloveJESUS<3","websiteimka");
               // Check connection
               if (mysqli_connect_errno())
               {
