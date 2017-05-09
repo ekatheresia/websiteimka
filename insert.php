@@ -14,7 +14,7 @@
 		$input  = json_decode($input, true); // decode JSON to associative array
 
 		print_r($input);
-	
+				echo "kontol";
 		$duration = $input["duration"];
 
 		$sql = "INSERT INTO traffic_data (region, tl_condition, traffic, duration) VALUES ('Dago 01',
