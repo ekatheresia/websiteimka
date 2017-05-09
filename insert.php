@@ -2,8 +2,7 @@
 	18214007 -->
 	
 <?php
-	$link = mysqli_connect("mysql3.gear.host", "sql6149911", "dSgYZ2fXk4", "sql6149911");
-connectstring = "DRIVER={MySQL ODBC 5.3 ANSI Driver};SERVER=mysql#.gear.host;DATABASE=DBName;UID=DBUser;PWD=myPassword;"
+	$link = mysqli_connect("mysql3.gear.host", "websiteimka", "iloveJESUS<3", "websiteimka");
 	if($link === false){
 		die("ERROR: Could not connect. " . mysqli_connect_error());
 	}
