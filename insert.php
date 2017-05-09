@@ -17,7 +17,7 @@
 		$duration = $input["duration"];
 
 		$sql = "INSERT INTO traffic_data (region, tl_condition, traffic, duration) VALUES ('Dago 01',
-		'Active', '2', $duration));";
+		'Active', '2', $duration)";
 
 		if ($conn->query($sql) === TRUE) {
 			echo "New record inserted successfully";
