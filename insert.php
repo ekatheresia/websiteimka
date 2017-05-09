@@ -21,7 +21,7 @@
 		$sql = "INSERT INTO traffic_data (region, tl_condition, traffic, duration) VALUES ('Dago 01',
 		'Active', '2', $duration)";
 echo "kontol3";
-		if ($conn->query($sql) === TRUE) {
+		if ($conn->query($sql) == TRUE) {
 			echo "New record inserted successfully";
 		} else {
 			echo "Error: " . $sql . "<br>" . $conn->error;
