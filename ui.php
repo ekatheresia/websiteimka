@@ -89,7 +89,7 @@ h1,h2,h3,h4,h5,h6 {
   <div class="w3-container w3-padding-64" id="traffic-data">
     <h1 class="w3-center">Traffic Data</h1>
               <?php
-              $con=mysqli_connect("localhost","root","","smart_traffic_light");
+              $con=mysqli_connect("mysql3.gear.host","websiteimka","iloveJESUS<3","websiteimka");
               // Check connection
               if (mysqli_connect_errno())
               {
