@@ -26,5 +26,6 @@ echo "kontol3";
 		} else {
 			echo "Error: " . $sql . "<br>" . $conn->error;
 		}
+	 echo "kontol4";
 	}
 ?>
