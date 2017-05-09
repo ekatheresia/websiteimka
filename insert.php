@@ -7,24 +7,22 @@
 		die("ERROR: Could not connect. " . mysqli_connect_error());
 	}
 		
-	$nama = mysqli_real_escape_string($link, $_POST['nama']);
-	$alamat = mysqli_real_escape_string($link, $_POST['alamat']);
-	$latitude = mysqli_real_escape_string($link, $_POST['latitude']);
-	$longitude = mysqli_real_escape_string($link, $_POST['longitude']);
- 
-//Membuat Query Insert ke Database
-	$sql = "INSERT INTO fotocopy (nama, alamat, latitude, longitude) VALUES ('$nama', '$alamat', '$latitude', '$longitude')";
+ if(getenv('REQUEST_METHOD') == 'POST') {
+	$input = file_get_contents("php://input");
 
-	if(mysqli_query($link, $sql)){
-		echo "Records added successfully.";
-	} else{
-		echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+		$input  = json_decode($input, true); // decode JSON to associative array
+
+		print_r($input);
+	
+		$duration = $input["duration"];
+
+		$sql = "INSERT INTO traffic_data (region, tl_condition, traffic, duration) VALUES ('Dago 01',
+		'Active', $duration));";
+
+		if ($conn->query($sql) === TRUE) {
+			echo "New record inserted successfully";
+		} else {
+			echo "Error: " . $sql . "<br>" . $conn->error;
+		}
 	}
 ?>
-
-<html>
-	<form>
-<!--Tombol untuk kembali ke menu utama-->
-	<input type="button" value="Kembali ke menu utama" onclick="window.location.href='index.php'" />
-	</form>
-</html>
